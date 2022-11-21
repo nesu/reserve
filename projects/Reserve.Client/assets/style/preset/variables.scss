@@ -1,0 +1,35 @@
+@import "~vuetify/src/styles/settings/variables";
+@import "~vuetify/src/styles/styles.sass";
+
+$primary: #356859;
+$secondary: #FD5523;
+$accent: #37966F;
+$tertiary: #B9E4C9;
+
+$body-font-family: 'Raleway', serif;
+$border-radius-root: 0px;
+
+$container-max-widths: (
+    'md': map-get($grid-breakpoints, 'md') * 0.9375,
+    'lg': map-get($grid-breakpoints, 'lg') * 0.7,
+    'xl': map-get($grid-breakpoints, 'xl') * 0.7
+);
+
+$material-light: (
+    'background': #F5FBF8,
+    //'cards': rgba(185, 228, 201, .1),
+    'text': (
+        'primary': #444444
+    ),
+    'buttons': (
+        'focused': rgba($color: $primary, $alpha: 0.2)
+    )
+);
+
+// VCard variables
+$card-outlined-border-color: rgba($color: #356859, $alpha: 0.15);
+$card-actions-padding: 16px;
+
+
+$calendar-event-border-radius: 6px;
+$calendar-event-border-width: 0px;

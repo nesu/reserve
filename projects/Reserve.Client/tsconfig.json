@@ -1,0 +1,43 @@
+// tsconfig.json
+{
+    "compilerOptions": {
+        "target": "es2020",
+        "module": "esnext",
+        "moduleResolution": "node",
+        "lib": [
+            "esnext",
+            "esnext.asynciterable",
+            "DOM",
+            "DOM.Iterable"
+        ],
+        "esModuleInterop": true,
+        "experimentalDecorators": true,
+        "importHelpers": true,
+        "allowJs": true,
+        "sourceMap": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "noEmit": true,
+        "baseUrl": ".",
+        "paths": {
+            "~/*": [
+                "./*"
+            ],
+            "@/*": [
+                "./*"
+            ]
+        },
+        "types": [
+            "@types/node",
+            "@nuxt/types",
+            "@nuxtjs/vuetify",
+            "@nuxtjs/axios",
+            "@nuxtjs/date-fns"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        ".nuxt",
+        "dist"
+    ]
+}

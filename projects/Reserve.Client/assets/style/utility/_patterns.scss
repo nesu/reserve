@@ -1,0 +1,16 @@
+// Dots pattern. Used from https://github.com/bansal-io/pattern.css/blob/master/pattern.scss
+
+$dots: (
+    sm: 0.5px,
+    md: 1px,
+    lg: 1.5px,
+    xl: 2px
+) !default;
+
+@each $name, $size in $dots
+{
+    .pattern-dots-#{$name} {
+        background-image: radial-gradient(currentColor #{$size}, transparent #{$size});
+        background-size: calc(10 * #{$size}) calc(10 * #{$size});
+    }
+}

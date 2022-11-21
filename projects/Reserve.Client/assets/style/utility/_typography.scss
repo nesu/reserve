@@ -1,0 +1,22 @@
+@import "../preset/variables.scss";
+
+.font-family-regular {
+    font-family: sans-serif !important;
+}
+
+@function strip-units($number) {
+    @return $number / ($number * 0 + 1);
+}
+
+// Ekrano dydžiui prisitaikantis šrifto dydis.
+// https://css-tricks.com/books/volume-i/scale-typography-screen-size/
+@mixin adaptive-font-size($minimal-font-size, $maximal-font-size, $line-height: false) {
+    $lower-limit: strip-units(map-get($map: $grid-breakpoints, $key: "sm"));
+    $higher-limit: strip-units(map-get($map: $grid-breakpoints, $key: "xl"));
+    $size: calc(#{$minimal-font-size}px + (#{$maximal-font-size} - #{$minimal-font-size}) *
+    ((100vw - #{$lower-limit}px) / (#{$higher-limit} - #{$lower-limit})));
+    font-size: #{$size};
+    @if $line-height {
+        line-height: #{$size};
+    }
+}

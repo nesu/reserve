@@ -1,0 +1,12 @@
+.v-dialog {
+    .v-card {
+        .v-card__text {
+            padding: 20px 24px 20px !important;
+        }
+    }
+
+    &.v-bottom-sheet {
+        box-shadow: none !important;
+        border-color: rgba($color: #356859, $alpha: 0.15) !important;
+    }
+}

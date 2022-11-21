@@ -1,0 +1,26 @@
+// "!important" is required to override Vuetify attributes.
+
+html {
+    overflow-y: auto !important;
+    height: 100% !important;
+}
+
+contents {
+    display: contents;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.logo-styled {
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@import "./utility";
+@import "./components";

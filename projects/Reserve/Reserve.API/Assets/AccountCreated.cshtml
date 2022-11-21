@@ -1,0 +1,18 @@
+﻿@using RazorLight
+@model dynamic
+
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<p>
+    Hello, your account was created. To log in, use information provided below:
+</p>
+<ul>
+    <li>
+        Email address: @Model.AccountEmail
+    </li>
+    <li>
+        Password: @Model.Password
+    </li>
+</ul>

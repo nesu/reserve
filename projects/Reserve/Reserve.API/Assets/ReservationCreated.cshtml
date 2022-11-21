@@ -1,0 +1,21 @@
+﻿@using RazorLight
+@model dynamic
+
+@{
+    Layout = "_Layout.cshtml";
+}
+
+<p>
+    Hello, your reservation successfully created:
+</p>
+<ul>
+    <li>
+        Date and time: @Model.DateTimeFormatted
+    </li>
+    <li>
+        Total price: @Model.Price
+    </li>
+    <li>
+        Duration: @Model.Duration
+    </li>
+</ul>

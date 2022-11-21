@@ -1,0 +1,18 @@
+@import "./variables";
+
+.theme--light
+{
+    .v-card
+    {
+        &.v-card--outlined {
+            border-color: $card-outlined-border-color;
+        }
+    }
+
+    .v-input
+    {
+        .v-text-field__details {
+            padding: 0;
+        }
+    }
+}

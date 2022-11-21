@@ -1,0 +1,15 @@
+@import "../utility/typography";
+
+.base-banner {
+    background-image: url("~assets/images/skulls.png");
+    background-repeat: repeat;
+
+    .inner-text {
+        @include adaptive-font-size($minimal-font-size: 24, $maximal-font-size: 36, $line-height: false);
+        padding: 0 8px 0 8px;
+        display: inline-block;
+        font-weight: 300;
+        background-color: rgba($color: white, $alpha: 0.5);
+        user-select: none;
+    }
+}

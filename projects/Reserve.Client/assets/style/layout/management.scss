@@ -1,0 +1,24 @@
+@import "~assets/style/preset/variables.scss";
+
+.container
+{
+    &.management-layout {
+        max-width: 100% !important;
+        padding: 16px !important;
+    }
+}
+
+.layout-navigator-active-item
+{
+    background-color: rgba($color: $tertiary, $alpha: 0.3) !important;
+    &::before {
+        opacity: 0 !important;
+    }
+}
+
+.v-list-item__icon
+{
+    .v-icon {
+        color: rgba($color: $primary, $alpha: 0.9) !important;
+    }
+}
